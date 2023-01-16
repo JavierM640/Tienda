@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.login{
+    width: 400px;
+    height: 340px;
+    background: black;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+
+.login h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+.registro{
+    width: 400px;
+    height: 680px;
+    background: black;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+
+.registro h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+.boton{
+    width: 94%;
+    border: 1px solid #017bab;
+    margin-bottom: 14px;
+    padding: 11px 10px;
+    background: #4e4d4d; 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.enviar{
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.login p{
+    height: 25px;
+    text-align: center;
+}
+
+.login p a{
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login p a:hover{
+    color: rgb(36, 19, 196);
+}
+
+.registro p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.registro p a{
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.registro p a:hover{
+    color: rgb(36, 19, 196);
+}
+
+.registro a{
+    text-decoration: underline;
+}
+
+table{
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 70px auto;
+    width: 600px;
+}
+
+th,td{
+    padding: 20px;
+}
+
+tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    color: white;
+}
+
+.contenedor .producto{
+    width: 330px;
+    height: 340px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgba(27, 23, 23, 0.5);
+    
+}
+
+.contenedor .producto:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .producto img{
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor .producto h4{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contenedor .producto p{
+    padding: 0 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.contenedor .producto button{
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 63, 63);
+    height: 30px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+}
+
+.comprar .producto:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .producto button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.logo {
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10 0px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    margin-bottom: 14%;
+    transition: 0.2s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+}
+
+.cesta{
+    width: 70px;
+    height: 40px;
+}
+
+.navbar ul ul {
+    display:none;
+    position:absolute;
+    top:140%;
+    padding:0;
+}
+
+.navbar ul ul li {
+    float:none;
+    width:140px;
+    height: 30px;
+}
+
+.navbar ul ul a {
+    line-height:100%;
+    padding:10px 10px 0px;
+    font-size: 15px;
+}
+
+.navbar ul li:hover > ul {
+    display:block;
+}
+
+.filtro{
+    margin-top: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: block;
+}
+
+.filtro select{
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 63, 63);
+    height: 30px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.update{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.update button{
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 63, 63);
+    height: 30px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.paginas{
+    width: 30px;
+    height: 50px;
+    position: relative;
+}
+
+.papelera{
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.botonP{
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.añadir{
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+.botonadd{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.mas{
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.añadirP{
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.pagar{
+    text-align: center;
+}
+
+.pagar button{
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+
+td input{
+    text-align: center;
+    width: 100px;
+    height: 20px;
+}
+
+.contenedor .carrito{
+    width: 330px;
+    height: 390px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgba(27, 23, 23, 0.5);
+    
+}
+
+.contenedor .carrito:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .carrito img{
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor .carrito h4{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contenedor .carrito p{
+    padding: 0 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.contenedor .carrito .delete,.sumar{
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 63, 63);
+    height: 30px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.comprar .carrito:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .carrito button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.sumar{
+    height: 30px;
+    width: 70px;
+    text-align: center;
+}
+
+.realizado{
+    text-align: center;
+}
+
+.realizado p{
+    color: white;
+}
+
+.paginas{
+    text-align: center;
+    width: 100%;
+}
+
+.paginas ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.paginas ul li {display: inline;}
+
+.paginas ul li a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.paginas ul li a:hover {
+    background-color: black;
+}
+
+.nostock{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.volver{
+    text-align: center;
+}
+
+.volver button{
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.stockU{
+    border-radius: 5px;
+    text-align: center;
+}
+
+.updateA{
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.vacio{
+    height: 500px;
+    width: 500px;
+}

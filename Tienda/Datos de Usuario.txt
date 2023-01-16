@@ -1,0 +1,9 @@
+Usuario no administrador
+
+Correo: user@gmail.com
+Contraseña: User2021
+
+Usuario administrador
+
+Correo: profesor@gmail.com
+Contraseña: Profesor2021
